@@ -2,14 +2,16 @@
 using EFCurso.DataBase;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EFCurso.Migrations
 {
     [DbContext(typeof(EFCursoContext))]
-    partial class EFCursoContextModelSnapshot : ModelSnapshot
+    [Migration("20221121191305_AddCampoCPF")]
+    partial class AddCampoCPF
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
