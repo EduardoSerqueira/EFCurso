@@ -1,6 +1,7 @@
 ﻿using EFCurso.DataBase;
 using EFCurso.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 
 namespace EFCurso.Controllers
 {
@@ -22,7 +23,32 @@ namespace EFCurso.Controllers
         {
             cursoContext.Funcionarios.Add(funcionario);
             cursoContext.SaveChanges();
-            return Ok();
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Index()
+        {
+            var funcionarios = cursoContext.Funcionarios.ToList();
+            return View(funcionarios);
+        }
+
+        public IActionResult Editar(int id)
+        {
+            var funcionarios = cursoContext.Funcionarios.ToList();
+
+            foreach (var funcionario in funcionarios)
+            {
+                if (funcionario.Id == id)
+                {
+                    this.Salvar(funcionario);
+                }
+                else
+                {
+                    return View("/Shared/Error");
+                }
+            }
+
+            return RedirectToAction("Index");
         }
     }
 }
