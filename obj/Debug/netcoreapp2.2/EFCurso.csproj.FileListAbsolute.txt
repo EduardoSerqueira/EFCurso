@@ -32,5 +32,3 @@ C:\Treinamentos\SchoolOfNet\EFCurso\obj\Debug\netcoreapp2.2\EFCurso.dll
 C:\Treinamentos\SchoolOfNet\EFCurso\obj\Debug\netcoreapp2.2\EFCurso.pdb
 C:\Treinamentos\SchoolOfNet\EFCurso\obj\Debug\netcoreapp2.2\EFCurso.genruntimeconfig.cache
 C:\Treinamentos\SchoolOfNet\EFCurso\obj\Debug\netcoreapp2.2\EFCurso.csproj.CopyComplete
-C:\Treinamentos\SchoolOfNet\EFCurso\obj\Debug\netcoreapp2.2\Razor\Views\Funcionario\Cadastrar.cshtml.g.cs
-C:\Treinamentos\SchoolOfNet\EFCurso\obj\Debug\netcoreapp2.2\Razor\Views\Funcionario\Index.cshtml.g.cs

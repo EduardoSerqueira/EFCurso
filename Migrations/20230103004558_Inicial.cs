@@ -14,7 +14,8 @@ namespace EFCurso.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Nome = table.Column<string>(nullable: true),
-                    Salario = table.Column<float>(nullable: false)
+                    Salario = table.Column<float>(nullable: false),
+                    Cpf = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

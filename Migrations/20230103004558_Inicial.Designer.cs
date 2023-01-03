@@ -8,8 +8,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EFCurso.Migrations
 {
     [DbContext(typeof(EFCursoContext))]
-    [Migration("20221121191305_AddCampoCPF")]
-    partial class AddCampoCPF
+    [Migration("20230103004558_Inicial")]
+    partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
